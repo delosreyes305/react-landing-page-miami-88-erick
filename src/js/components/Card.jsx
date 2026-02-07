@@ -6,6 +6,7 @@ export const Card = ({ name, age, image }) => {
   style={{ height: "200px" }} alt="..." />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
+        <h5 className="card-title">Age: {age}</h5>
         <p className="card-text">
           Thank you for for your visit. {name} is {age} years old. If you want to connect with this specialist press the button "call".
         </p>

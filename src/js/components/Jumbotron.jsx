@@ -6,9 +6,10 @@ export const Jumbotron = () => {
         {" "}
         <h1 className="display-5 fw-bold">This Is A Landing Page</h1>{" "}
         <p className="col-md-8 fs-4">
-          Using a series of utilities, you can create this jumbotron, just like
-          the one in previous versions of Bootstrap. Check out the examples
-          below for how you can remix and restyle it to your liking.
+          Lorem ipsum dolor <strong>sit amet,</strong> consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud <strong>exercitation ullamco laboris</strong> nisi ut
+          aliquip ex ea commodo consequat.
         </p>{" "}
         <button className="btn btn-primary btn-lg" type="button">
           Call To Action

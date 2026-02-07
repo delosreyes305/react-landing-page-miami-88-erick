@@ -22,6 +22,9 @@ export const Home = () => {
 "https://images.pexels.com/photos/32182752/pexels-photo-32182752.jpeg",
 "https://images.pexels.com/photos/28375394/pexels-photo-28375394.jpeg",
 "https://images.pexels.com/photos/17827046/pexels-photo-17827046.jpeg",
+"https://cdn.pixabay.com/photo/2018/09/05/18/24/scenery-3656768_640.jpg",
+"https://wallpaper.forfun.com/fetch/f5/f524255431e9e00bff0bc124ef008c4a.jpeg",
+"https://wallpapercave.com/wp/wp5810527.jpg",
 
 
   ])
@@ -59,14 +62,34 @@ export const Home = () => {
       name: "Josh",
       age: 38,
     },
+
+     {
+      name: "Alejandra",
+      age: 33,
+    },
+
+     {
+      name: "Camilo",
+      age: 1,
+    },
+
+    {
+      name: "Maria",
+      age: 14,
+    },
+    
   ]);
 
   return (
     <>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
       <Jumbotron />
+      <main className="flex-grow-1">
       <CardsRow people={people} images={images} />
+      </main>
       <Footer />
+      </div>
     </>
   );
 };
