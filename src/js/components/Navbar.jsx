@@ -1,12 +1,12 @@
 export const Navbar = () => {
   return (
-    <nav className="navbar bg-body-tertiary fixed-top">
+    <nav className="navbar bg-black fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Offcanvas navbar
+        <a className="navbar-brand text-light" href="#">
+          Miami-88
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler bg-light"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
@@ -23,7 +23,7 @@ export const Navbar = () => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
+              Full Stack Web Development
             </h5>
             <button
               type="button"
@@ -83,7 +83,7 @@ export const Navbar = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-primary" type="submit">
                 Search
               </button>
             </form>
