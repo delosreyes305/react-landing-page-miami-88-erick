@@ -6,11 +6,11 @@ export const CardsRow = ({ people, images }) => {
     return array[Math.floor(Math.random() * array.length)];
   };
   return (
-    <div className="container p-3 mb-3">
+    <div className="container p-5 mb-5">
       <div className="row justify-content-center">
         {people.map((person, index) => (
           <div key={index} className="col-4 d-flex justify-content-center">
-            <Card 
+            <Card
               name={person.name}
               age={person.age}
               image={pickAImage(images)}

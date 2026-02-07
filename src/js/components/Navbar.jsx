@@ -2,11 +2,11 @@ export const Navbar = () => {
   return (
     <nav className="navbar bg-black fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand text-light" href="#">
-          Miami-88
+        <a className="navbar-brand px-3 py-3 fs-4 text-light" href="#">
+          <i className="fa-brands fa-react fa-2xl"></i> React
         </a>
         <button
-          className="navbar-toggler bg-light"
+          className="navbar-toggler bg-light px-2"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
@@ -21,18 +21,21 @@ export const Navbar = () => {
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+          <div className="offcanvas-header bg-black">
+            <h5
+              className="offcanvas-title text-light"
+              id="offcanvasNavbarLabel"
+            >
               Full Stack Web Development
             </h5>
             <button
               type="button"
-              className="btn-close"
+              className="btn-close bg-light"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
           </div>
-          <div className="offcanvas-body">
+          <div className="offcanvas-body bg-warning-subtle">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
@@ -83,7 +86,7 @@ export const Navbar = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-primary" type="submit">
+              <button className="btn btn-dark" type="submit">
                 Search
               </button>
             </form>
