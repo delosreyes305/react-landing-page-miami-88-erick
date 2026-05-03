@@ -7,18 +7,21 @@ export const CardsRow = ({ people, images }) => {
   };
   return (
     <div className="container p-5 mb-5">
-      <div className="row justify-content-center">
+      <div className="row d-flex justify-content-center">
+
         {people.map((person, index) => (
-          <div key={index} className="col-4 d-flex justify-content-center">
+          <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
             <Card
               name={person.name}
               age={person.age}
               image={pickAImage(images)}
             />
           </div>
+      
         ))}
+        </div>
       </div>
-    </div>
+
   );
 };
 
